@@ -26,7 +26,7 @@ public class LienService {
     }
 	
 	//avoir les liens visibles que pour les visiteurs
-	public List<Lien> getUserCours()
+	public List<Lien> getUserLien()
     {
         List<Lien> LienList = repository.findByActiveTrue();
         if(LienList.size() > 0) {
