@@ -42,7 +42,7 @@ public class UtilisateurService {
         if(user.isPresent()) 
         {
         	Utilisateur newUser = user.get();
-        	newUser.setEtat(false);
+        	newUser.setEtat("USER");
         	 newUser = repository.save(newUser);
         	 return newUser;
         }

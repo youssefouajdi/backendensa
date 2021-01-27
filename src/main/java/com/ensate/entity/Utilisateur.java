@@ -28,7 +28,7 @@ public class Utilisateur implements Serializable {
 	private String prenom;
 	private String email;
 	private String mdp;
-	private Boolean etat;
+	private String etat;
 	@CreationTimestamp
 	@Temporal(TemporalType.TIMESTAMP)
 	protected Date created_at;
@@ -40,7 +40,7 @@ public class Utilisateur implements Serializable {
 	
 	
 	
-	public Utilisateur(String nom, String prenom, String email, String mdp, Boolean etat, Date created_at,
+	public Utilisateur(String nom, String prenom, String email, String mdp, String etat, Date created_at,
 			Date updated_at) {
 		super();
 		this.nom = nom;
@@ -93,12 +93,12 @@ public class Utilisateur implements Serializable {
 	}
 
 
-	public Boolean getEtat() {
+	public String getEtat() {
 		return etat;
 	}
 
 
-	public void setEtat(Boolean etat) {
+	public void setEtat(String etat) {
 		this.etat = etat;
 	}
 

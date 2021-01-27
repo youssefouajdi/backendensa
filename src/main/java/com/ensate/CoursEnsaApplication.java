@@ -10,8 +10,6 @@ public class CoursEnsaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CoursEnsaApplication.class, args);
-		
-	
 	}
 
 }
